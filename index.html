@@ -1,34 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soyeong Portfolio</title>
   <style>
-    body { font-family: Arial; padding: 40px; }
-    h1 { color: #2c3e50; }
-    .project { margin-bottom: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f5f7fa;
+      color: #222;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 32px;
+      color: #444;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .project {
+      margin-bottom: 24px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #1f2d3d;
+    }
+
+    .project p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 12px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>장소영 Portfolio</h1>
+    <p class="subtitle">Bioinformatics & AI Research Engineer</p>
 
-<h1>장소영 Portfolio</h1>
-<p>Bioinformatics & AI Research Engineer</p>
+    <h2>Projects</h2>
 
-<h2>Projects</h2>
+    <div class="project">
+      <h3>RNA-seq Drug Response Prediction</h3>
+      <p>
+        RNA-seq 기반 유전자 발현 데이터를 활용하여 항암 약물 반응을 예측한
+        머신러닝 프로젝트입니다. 전처리, feature selection, PCA 분석,
+        ensemble 모델링까지 수행했습니다.
+      </p>
+      <div class="links">
+        <a href="https://github.com/soyeong9712-lab/rna-seq-drug-response" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-<div class="project">
-  <h3>RNA-seq Drug Response Prediction</h3>
-  <p>RNA-seq 기반 항암 약물 반응 예측 모델</p>
-</div>
+    <div class="project">
+      <h3>Omics + LLM System</h3>
+      <p>
+        공개 오믹스 데이터와 LLM을 결합하여 유전자 데이터 기반 작용기전(MoA)
+        해석을 지원하는 시스템입니다. 데이터 표준화, pathway 해석,
+        자연어 기반 인사이트 생성 기능을 구현했습니다.
+      </p>
+      <div class="links">
+        <a href="https://github.com/soyeong9712-lab/omics-llm-system" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-<div class="project">
-  <h3>Omics + LLM System</h3>
-  <p>유전자 데이터 기반 MoA 해석 시스템</p>
-</div>
+    <div class="project">
+      <h3>SNS Safe Content Platform</h3>
+      <p>
+        AI 기반 콘텐츠 필터링 기능을 포함한 SNS 안전 콘텐츠 플랫폼 팀
+        프로젝트입니다. 사용자 게시글 분석, 관리자 기능, 유해 콘텐츠 관리
+        기능 등을 구현했습니다.
+      </p>
+      <div class="links">
+        <a href="https://github.com/soyeong9712-lab/sns-safe-content-platform" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-<div class="project">
-  <h3>SNS Safe Content Platform</h3>
-  <p>AI 기반 콘텐츠 필터링 시스템</p>
-</div>
-
+    <p class="footer">
+      © 2026 Soyeong Jang. All rights reserved.
+    </p>
+  </div>
 </body>
 </html>
